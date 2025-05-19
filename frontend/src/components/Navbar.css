@@ -1,25 +1,42 @@
 .navbar {
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #333;
-  color: #fff;
+  color: white;
   display: flex;
   gap: 20px;
   align-items: center;
-  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .navbar a,
-.navbar .dropbtn {
+.navbar .dropbtn,
+.navbar .submenu-title,
+.logo {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
   color: white;
   text-decoration: none;
-  padding: 8px;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 8px;
+  display: block;
 }
 
 .logo {
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar a:hover,
+.navbar .dropbtn:hover,
+.navbar .submenu-content a:hover {
+  background-color: #555;
 }
 
 .dropdown {
@@ -31,20 +48,19 @@
   position: absolute;
   background-color: #444;
   min-width: 160px;
-  top: 38px;
+  top: 100%;
+  left: 0;
   z-index: 1;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
   display: block;
 }
 
-.dropdown-content .submenu {
+.submenu {
   position: relative;
-  padding: 8px;
-  color: white;
-  cursor: default;
 }
 
 .submenu-content {
@@ -56,12 +72,12 @@
   min-width: 160px;
 }
 
-.submenu:hover .submenu-content {
+.submenu:hover .submenu-content,
+.submenu:focus-within .submenu-content {
   display: block;
 }
 
 .submenu-content a {
   display: block;
   padding: 8px;
-  color: white;
 }
