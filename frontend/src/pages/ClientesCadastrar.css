@@ -1,0 +1,58 @@
+.form-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-section label {
+  font-weight: bold;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.btn {
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.salvar {
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+}
+
+.cancelar {
+  background-color: #dc3545;
+  color: white;
+}
